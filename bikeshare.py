@@ -5,6 +5,14 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+banner='''   
+            #######################################
+            # Explorer US Bikeshare data Program  #
+            #          Coded in                   #
+            #           Python                    #
+            #                                     #
+            #######################################
+'''
 
 def get_filters():
     """
@@ -282,6 +290,7 @@ def display_raw_data(df):
             continue
 
 def main():
+    print(banner)
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
