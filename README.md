@@ -37,5 +37,5 @@ washington.csv
 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+All credit goes to the udacity resources tab where I downloaded most of the files I used and to the pandas documentaion especially the indexing and selecting data page
+https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html 
