@@ -25,16 +25,17 @@ def get_filters():
     while True:
         city = input("Please choose a city to analyze from the above (Enter either by name or corresponding number): ")
         city = city.lower()
+	#Re assign variable city with the city string name to handle the case where the user enters the corresponding interger string 
         if city == "1" or city == "chicago":
-            city = "chicago" # re assigning it in case the user chose using the interger string
+            city = "chicago" 
             print("You chose ", city)
             break
         elif city == "2" or city == "new york city":
-            city = "new york city" # re assigning city in case the user chose using the interger string
+            city = "new york city" 
             print("You chose ", city)
             break
         elif city == "3" or city == "washington":
-            city = "washington" # re assigning city in case the user chose using the interger string
+            city = "washington" 
             print("You chose ", city)
             break
         else:
@@ -48,26 +49,27 @@ def get_filters():
     while True:
         month = input("Please chose the name of the month to filter data by from above? (Either by name or corresponding number) \n")
         month.lower()
+	#Re assign variable month with the month string name to handle the case where the user enters the corresponding interger string
         if month == "1" or month == "january":
-            month = "january" # re assigning the month in case the user chose the corresponging integer string
+            month = "january" 
             break
         elif month == "2" or month == "february":
-            month = "february" # re assigning the month in case the user chose the corresponging integer string
+            month = "february" 
             break
         elif month == "3" or month == "march":
-            month = "march" # re assigning the month in case the user chose the corresponging integer string
+            month = "march" 
             break
         elif month == "4" or month == "april":
-            month = "april" # re assigning the month in case the user chose the corresponging integer string
+            month = "april" 
             break
         elif month == "5" or month == "may":
-            month = "may" # re assigning the month in case the user chose the corresponging integer string
+            month = "may" 
             break
         elif month == "6" or month == "june":
-            month = "june" # re assigning the month in case the user chose the corresponging integer string
+            month = "june" 
             break
         elif month == "7" or month == "all":
-            month = "all" # re assigning the month in case the user chose the corresponging integer string
+            month = "all" 
             break
         else: 
             print("Invalid input, please chose by entering name of month or corresponging number(1,2,3,4,5,6,7)")
@@ -79,29 +81,30 @@ def get_filters():
     while True:
         day = input("Please chose the name of the day to filter data by (from above either by name or corresponding number)? \n")
         day = day.lower()
+	#Re assign variable day with the string day name string to handle the case where the user enters the corresponfing  interger string
         if day == "1" or day == "monday":
-            day = "monday" # re assigning the day in case the user chose the corresponging integer string
+            day = "monday" 
             break
         elif day == "2" or day == "tuesday":
-            day = "tuesday" # re assigning the day in case the user chose the corresponging integer string
+            day = "tuesday" 
             break
         elif day == "3" or day == "wednesday":
-            day = "wednesday" # re assigning the day in case the user chose the corresponging integer string
+            day = "wednesday" 
             break
         elif day == "4" or day == "thursday":
-            day = "thursday" # re assigning the day in case the user chose the corresponging integer string
+            day = "thursday" 
             break
         elif day == "5" or day == "friday":
-            day = "friday" # re assigning the day in case the user chose the corresponging integer string
+            day = "friday" 
             break
         elif day == "6" or day == "saturday":
-            day = "saturday" # re assigning the day in case the user chose the corresponging integer string
+            day = "saturday" 
             break
         elif day == "7" or day == "sunday":
-            day = "sunday" # re assigning the day in case the user chose the corresponging integer string
+            day = "sunday" 
             break
         elif day == "8" or day == "all":
-            day = "all" # re assigning the day in case the user chose the corresponging integer string
+            day = "all" 
             break
         else: 
             print("Invalid input, please chose by entering name of day or corresponging number(1,2,3,4,5,6,7,8)")
