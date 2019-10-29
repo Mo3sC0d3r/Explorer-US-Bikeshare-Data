@@ -5,6 +5,14 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+banner='''   
+            #######################################
+            # Explorer US Bikeshare data Program  #
+            #          Coded in                   #
+            #           Python                    #
+            #                                     #
+            #######################################
+'''
 
 def get_filters():
     """
@@ -285,6 +293,7 @@ def display_raw_data(df):
             continue
 
 def main():
+    print(banner)
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
@@ -296,9 +305,16 @@ def main():
         display_raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
-            break
-
+        #if restart.lower() != 'yes':
+        #    break
+        #letting the user know when the pragram ends because of invalid input
+        if restart.lower() == 'yes':
+        	continue
+        elif restart.lower() == 'no':
+        	break
+        else:
+        	print("\nInvalid input: Sorry please try again ! ")
+        	break
 
 if __name__ == "__main__":
 	main()
