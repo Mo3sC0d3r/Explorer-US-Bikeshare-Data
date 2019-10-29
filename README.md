@@ -32,7 +32,9 @@ Statistics Computed
 
 ### Files used
 chicago.csv
+
 new_york_city.csv
+
 washington.csv
 
 
