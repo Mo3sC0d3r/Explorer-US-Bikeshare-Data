@@ -293,9 +293,16 @@ def main():
         display_raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
-            break
-
+        #if restart.lower() != 'yes':
+        #    break
+        #letting the user know when the pragram ends because of invalid input
+        if restart.lower() == 'yes':
+        	continue
+        elif restart.lower() == 'no':
+        	break
+        else:
+        	print("\nInvalid input: Sorry please try again ! ")
+        	break
 
 if __name__ == "__main__":
 	main()
